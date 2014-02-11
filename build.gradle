@@ -25,16 +25,15 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC1") {
-
-        // Exclude dependencies
+        // Compile time dependencies
         providedCompile("org.springframework.boot:spring-boot-starter-tomcat:1.0.0.RC1")
 
-        // Include dependencies
+        // Run time dependencies
         compile("org.springframework:spring-context:4.0.1.RELEASE")
         compile("org.springframework:spring-web:4.0.1.RELEASE")
         compile("org.springframework:spring-webmvc:4.0.1.RELEASE")
     }
-
+    compile("org.springframework.boot:spring-boot-starter-actuator:1.0.0.RC1")
     compile("com.fasterxml.jackson.core:jackson-databind")
     testCompile("junit:junit:4.11")
 }
