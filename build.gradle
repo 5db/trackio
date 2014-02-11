@@ -1,0 +1,44 @@
+buildscript {
+    repositories {
+        maven { url "http://repo.spring.io/libs-snapshot" }
+        mavenLocal()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.0.0.RC1")
+    }
+}
+
+apply plugin: "java"
+apply plugin: "idea"
+apply plugin: "spring-boot"
+apply plugin: "war"
+
+war {
+    baseName = "trackio"
+    version = "0.1.0"
+}
+
+repositories {
+    mavenCentral()
+    maven { url "http://repo.spring.io/libs-snapshot" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC1") {
+
+        // Exclude dependencies
+        providedCompile("org.springframework.boot:spring-boot-starter-tomcat:1.0.0.RC1")
+
+        // Include dependencies
+        compile("org.springframework:spring-context:4.0.1.RELEASE")
+        compile("org.springframework:spring-web:4.0.1.RELEASE")
+        compile("org.springframework:spring-webmvc:4.0.1.RELEASE")
+    }
+
+    compile("com.fasterxml.jackson.core:jackson-databind")
+    testCompile("junit:junit:4.11")
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = "1.8"
+}
