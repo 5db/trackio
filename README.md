@@ -5,17 +5,17 @@ approach to deliver enhanced User Experience (UX) while getting the job done.
 
 # How it works?
 
-** Step 1 **
+* Step 1
 
-User creates a Vacation Request and submits for Approval
+    User creates a Vacation Request and submits for Approval
 
-** Step 2 **
+* Step 2
 
-Manager approves a Vacation Request he received
+    Manager approves a Vacation Request he received
 
-** Step 3 **
+* Step 3
 
-User receives an Approval Notification and is ready for Vacation
+    User receives an Approval Notification and is ready for Vacation
 
 # Resource URIs & Operations
 
