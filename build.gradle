@@ -25,10 +25,10 @@ repositories {
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web:1.0.0.RC1") {
-        // Compile time dependencies
+        // Provided at runtime by the container
         providedCompile("org.springframework.boot:spring-boot-starter-tomcat:1.0.0.RC1")
 
-        // Run time dependencies
+        // Packaged during the application build
         compile("org.springframework:spring-context:4.0.1.RELEASE")
         compile("org.springframework:spring-web:4.0.1.RELEASE")
         compile("org.springframework:spring-webmvc:4.0.1.RELEASE")
