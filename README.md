@@ -1,7 +1,7 @@
 # Trackio
 
 Trackio is a time tracker application focused on vacation tracking within a company. It takes a very simple 3 Step
-approach to deliver enhanced User Experience (UX).
+approach to deliver enhanced User Experience (UX) while getting the job done.
 
 # How it works?
 
@@ -17,35 +17,57 @@ Manager approves a Vacation Request he received
 
 User receives an Approval Notification and is ready for Vacation
 
-# Resource URIs and Operations (HTTP Methods)
+# Resource URIs & Operations
 
 ## Resource URIs
 
-** All Vacations **
+* All Vacations
 
-`http://www.track.io/{username}/vacations`
+    `http://www.track.io/{username}/vacations`
 
-** One Vacation **
+* One Vacation
 
-`http://www.track.io/{username}/vacations/{Vacation ID}`
+    `http://www.track.io/{username}/vacations/{Vacation ID}`
 
-** Vacation Status **
+* Vacation Status
 
-`http://www.track.io/{username}/vacations/{Vacation ID}/status`
+    `http://www.track.io/{username}/vacations/{Vacation ID}/status`
 
 ## Operations
 
-/---------------------------------------------------------------------------------------------------------------------------\
-| Resource URI                           		| HTTP Method | Description                                                 |
-|-----------------------------------------------|-------------|-------------------------------------------------------------|
-| `/{username}/vacations`                 		| GET         | Ask for all of the vacations for logged in user             |
-| `/{username}/vacations`                 		| POST        | Attempt to create a new Vacation for logged in user,        |
-|                                         		|             | returning the Vacation (in the Location HTTP Header) of the |
-|                                         		|             | newly created resource.                                     |
-| `/{username}/vacations/{Vacation ID}    		| GET         | Ask for representation of a specific Vacation for logged    |
-|                                         		|             | in user                                                     |
-| `/{username}/vacations/{Vacation ID}    		| DELETE      | Requests the deletion of a specified Vacation for logged    |
-|                                         		|             | in user                                                     |
-| `/{username}/vacations/{Vacation ID}/status   | GET         | Ask for representation of a specific Vacation's status for  |
-|                                         		|             | logged in user                                              |
-\---------------------------------------------------------------------------------------------------------------------------/
+<table>
+    <thead>
+	<tr>
+		<th>Resource URI</th>
+		<th>Supported HTTP Methods</th>
+		<th>Description</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>`/{username}/vacations`</td>
+		<td>GET</td>
+		<td>Ask for all of the vacations for logged in user</td>
+	</tr>
+	<tr>
+		<td>`/{username}/vacations`</td>
+		<td>POST</td>
+		<td>Attempt to create a new Vacation for logged in user, returning the Vacation (in the Location HTTP Header) of the newly created resource.</td>
+	</tr>
+	<tr>
+		<td>`/{username}/vacations/{Vacation ID}</td>
+		<td>GET</td>
+		<td>Ask for representation of a specific Vacation for logged in user</td>
+	</tr>
+	<tr>
+		<td>`/{username}/vacations/{Vacation ID}</td>
+		<td>DELETE</td>
+		<td>Requests the deletion of a specified Vacation for logged in user</td>
+	</tr>
+	<tr>
+		<td>`/{username}/vacations/{Vacation ID}/status</td>
+		<td>GET</td>
+		<td>Ask for representation of a specific Vacation's status for logged in user</td>
+	</tr>
+	</tbody>
+</table>
