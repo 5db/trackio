@@ -33,7 +33,7 @@ dependencies {
         compile("org.springframework:spring-web:4.0.1.RELEASE")
         compile("org.springframework:spring-webmvc:4.0.1.RELEASE")
     }
-    compile("org.springframework.boot:spring-boot-starter-security:1.0.0.RC1")
+//    compile("org.springframework.boot:spring-boot-starter-security:1.0.0.RC1")
     compile("org.springframework.boot:spring-boot-starter-actuator:1.0.0.RC1")
     compile("org.thymeleaf:thymeleaf-spring4:2.1.2.RELEASE")
     compile("com.fasterxml.jackson.core:jackson-databind")
