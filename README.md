@@ -1,7 +1,7 @@
 # Trackio
 
 Trackio is a time tracker application focused on vacation tracking within a company. It takes a very simple 3 Step
-approach to deliver enhanced User Experience (UX) while getting the job done.
+approach, yet delivers an enhanced User Experience (UX).
 
 # How it works?
 
